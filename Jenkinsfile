@@ -5,10 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                script {
-                    def nodeVersion = sh(script: 'node --version', returnStdout: true).trim()
-                    echo "Node.js Version: ${nodeVersion}"
-                }
+                sh 'node --version'
             }
         }
     }
