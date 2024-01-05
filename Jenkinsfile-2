@@ -1,4 +1,3 @@
-Jenkinsfile（声明式管道）
 pipeline {
     agent any
     stages {
